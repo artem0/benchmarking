@@ -44,3 +44,10 @@ For more details about modes in JMH see [specification](http://hg.openjdk.java.n
 Launching main method with benchmark (class is specified via `main` parameter in `task runMain`):
 
 `gradle runMain`
+
+### Support in Intellij Idea
+
+For launching benchmarks in Intellij Idea append support of annotation processor compilation:
+
+In `Settings - > Compiler -> Annotation Processor -> Enable annotation processing`, 
+check `Processor Path` and put the path of the exported `.jar` file.
