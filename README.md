@@ -1,4 +1,4 @@
-Java benchmarks with JMH
+### Java benchmarks with JMH
 
 This project contains next benchmarks:
 1. Benchmark for demonstration how JVM handle problems with [false sharing](https://en.wikipedia.org/wiki/False_sharing)
@@ -37,3 +37,10 @@ The output will look like this:
 Benchmark mode for BranchPredictionBenchmark is **AverageTime** and in this case **lower value is better**
 
 For more details about modes in JMH see [specification](http://hg.openjdk.java.net/code-tools/jmh/file/6cc1450c6a0f/jmh-core/src/main/java/org/openjdk/jmh/annotations/Mode.java)
+
+## Running
+### Gradle
+
+Launching main method with benchmark (class is specified via `main` parameter in `task runMain`):
+
+`gradle runMain`
