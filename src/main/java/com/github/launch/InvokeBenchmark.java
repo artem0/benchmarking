@@ -1,6 +1,6 @@
 package com.github.launch;
 
-import com.github.branch_prediction.BranchPredictionBenchmark;
+import com.github.benhmarks.branch_prediction.BranchPredictionBenchmark;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
