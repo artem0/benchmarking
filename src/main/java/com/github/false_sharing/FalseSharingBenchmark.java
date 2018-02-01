@@ -1,8 +1,7 @@
-package samples.false_sharing;
+package com.github.false_sharing;
 
 import org.openjdk.jmh.annotations.*;
 import sun.misc.Contended;
-
 
 @Fork(value = 1, jvmArgsPrepend = "-XX:-RestrictContended")
 @Warmup(iterations = 10)

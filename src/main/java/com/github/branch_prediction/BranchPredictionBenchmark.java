@@ -1,4 +1,4 @@
-package samples.branch_prediction;
+package com.github.branch_prediction;
 
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.infra.Blackhole;
