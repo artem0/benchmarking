@@ -45,6 +45,12 @@ Launching main method with benchmark (class is specified via `main` parameter in
 
 `gradle runMain`
 
+You can make `*.jar` file via `gradle jar` command, main class is specified via `Main-Class` parameter.
+
+After generating `*.jar` file, you cal launch app with next command:
+
+`java -jar build/lib/bencmarking-1.0.jar`
+
 ### Support in Intellij Idea
 
 For launching benchmarks in Intellij Idea append support of annotation processor compilation:

@@ -18,3 +18,13 @@ task(runMain, dependsOn: 'classes', type: JavaExec) {
     main = 'com.github.branch_prediction.BranchPredictionBenchmark'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+jar {
+    manifest {
+        attributes "Main-Class": "samples.branch_prediction.BranchPredictionBenchmark"
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
