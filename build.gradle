@@ -15,13 +15,13 @@ dependencies {
 }
 
 task(runMain, dependsOn: 'classes', type: JavaExec) {
-    main = 'com.github.branch_prediction.BranchPredictionBenchmark'
+    main = 'com.github.launch.InvokeBenchmark'
     classpath = sourceSets.main.runtimeClasspath
 }
 
 jar {
     manifest {
-        attributes "Main-Class": "samples.branch_prediction.BranchPredictionBenchmark"
+        attributes "Main-Class": "com.github.launch.InvokeBenchmark"
     }
 
     from {

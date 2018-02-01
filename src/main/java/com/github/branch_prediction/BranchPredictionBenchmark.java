@@ -57,13 +57,4 @@ public class BranchPredictionBenchmark {
             }
         }
     }
-
-    public static void main(String[] args) throws RunnerException {
-        Options opt = new OptionsBuilder()
-                .include(".*" + BranchPredictionBenchmark.class.getSimpleName() + ".*")
-                .build();
-
-        new Runner(opt).run();
-    }
-
 }
