@@ -1,4 +1,4 @@
-package com.github.benhmarks.false_sharing;
+package com.github.benhmarks;
 
 import org.openjdk.jmh.annotations.*;
 import sun.misc.Contended;
